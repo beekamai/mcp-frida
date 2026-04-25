@@ -1,0 +1,27 @@
+{
+  "name": "mcp-frida",
+  "version": "0.1.0",
+  "description": "MCP server wrapping Frida — dynamic instrumentation for native and managed processes",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-frida": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc -w"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "frida": "^16.5.6"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.6.3"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  }
+}
